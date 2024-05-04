@@ -1,0 +1,314 @@
+.main-background-container {
+    background-color: #ebebeb;
+    background-size: cover;
+    height: 100%;
+}
+
+.top-bar {
+    background-color: #0d2436;
+    background-size: cover;
+    height: 60px;
+
+}
+
+
+.bell-icon {
+    color: grey;
+    font-size: 22px;
+    padding-right: 28px;
+    padding-top: 12px;
+
+}
+
+
+
+.addnew-bg {
+    height: 70%;
+    width: 110px;
+    background-color: #06c736;
+    border: none;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: center;
+    padding-left: 16px;
+}
+
+.addnew-font {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Roboto";
+
+
+}
+
+
+
+
+.search-container {
+    position: relative;
+    width: 300px;
+    padding-top: 10px;
+    padding-right: 12px;
+
+}
+
+.search-input {
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    outline: none;
+}
+
+.search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.search-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-dropdown-item {
+    background-color: #f0f0f0;
+}
+
+
+
+
+.dashboard-bg-container {
+    background-color: white;
+    background-size: cover;
+    height: 90vh;
+    width: 130px;
+    text-align: center;
+    margin-left: 6px;
+
+}
+
+.dashboard-title {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.patient-bg-card1 {
+    background-color: transparent;
+    height: 50px;
+    width: 120px;
+
+}
+
+.patient-bg-card2 {
+    background-color: #06c736;
+    height: 50px;
+    width: 120px;
+
+}
+
+.patient-bg-card3 {
+    background-color: transparent;
+    height: 50px;
+    width: 120px;
+
+}
+
+.patient-bg-card4 {
+    background-color: transparent;
+    height: 50px;
+    width: 120px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+.consultant-bar-bg {
+    background-color: white;
+    height: 40px;
+    width: 80vw;
+    margin-left: 10px;
+    margin-top: 8px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.consultant-title {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 200;
+    color: #06c736;
+}
+
+.consultant-icon {
+    font-size: 25px;
+    color: #06c736;
+
+
+}
+
+.filter-bar-bg {
+    background-color: white;
+    height: 40px;
+    width: 80vw;
+    margin-left: 10px;
+    margin-top: 8px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.filter-button {
+    height: 40px;
+    width: 80px;
+    background-color: #06c736;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.consultant-blocks-bg {
+    background-color: white;
+    height: 90px;
+    width: 22%;
+    margin-left: 10px;
+    margin-top: 8px;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-left-width: 4px;
+    border-left-color: #e8dcbc;
+
+}
+
+
+.consultant-blocks-bg2 {
+    background-color: white;
+    height: 90px;
+    width: 22%;
+    margin-left: 10px;
+    margin-top: 8px;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-left-width: 4px;
+    border-left-color: #d2eff7;
+
+}
+
+
+
+.consultant-blocks-bg3 {
+    background-color: white;
+    height: 90px;
+    width: 22%;
+    margin-left: 10px;
+    margin-top: 8px;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-left-width: 4px;
+    border-left-color: #d2f7dc;
+
+}
+
+
+.consultant-blocks-bg4 {
+    background-color: white;
+    height: 90px;
+    width: 22%;
+    margin-left: 10px;
+    margin-top: 8px;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-left-width: 4px;
+    border-left-color: #e4d2f7;
+
+}
+
+
+.consultants-count-text {
+    font-size: 14px;
+    color: #06c736;
+    padding-top: 6px;
+}
+
+.icon-bg {
+    background-color: #e8dcbc;
+    width: 40px;
+    height: 38px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 5px;
+}
+
+
+.icon-bg2 {
+    background-color: #d2eff7;
+    width: 40px;
+    height: 38px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 5px;
+}
+
+.icon-bg3 {
+    background-color: #d2f7dc;
+    width: 40px;
+    height: 38px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 5px;
+}
+
+.icon-bg4 {
+    background-color: #e4d2f7;
+    width: 40px;
+    height: 38px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 5px;
+}
+
+
+.consultants-table-bg {
+    height: 60%;
+    width: 95%;
+    background-color: white;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}

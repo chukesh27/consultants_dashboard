@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"  href="patient.css">
+    <link rel="stylesheet" href="patient.js">
+
+</head>
+
+<body>
+    <div class="main-background-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="top-bar pt-2 pr-2 d-flex flex-row justify-content-end ">
+                        <div class="search-container d-flex flex-row justify-content-center">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <div class="search-dropdown" id="searchDropdown">
+                                <div class="search-dropdown-item">Patients</div>
+                                <div class="search-dropdown-item">Labs</div>
+                                <div class="search-dropdown-item">Bills</div>
+                            </div>
+                        </div>
+                        <div class="pt-2 pr-4 ">
+                            <div class="addnew-bg d-flex dlex-row text-center pt-2" style="margin-right:300px;">
+                                <p class="addnew-font"> <i class="fas fa-plus"></i> Add New</p>
+                            </div>
+                        </div>
+                        <div class="pt-1 pr-5 d-flex flex-row justify-content-end">
+                            <i class="fas fa-bell bell-icon "></i>
+                            <div class="d-flex flex-row">
+                                <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="https://media.wired.com/photos/59325d6b5c4fbd732b552129/master/pass/newton-papers-ft.jpg" alt="Bordered avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-start">
+            <div class="dashboard-bg-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="pl-1 pt-2">
+                                <p class="dashboard-title">Dashboards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="patient-bg-card1 shadow text-center pt-2 ml-1 mb-2">
+                        <i class="fas fa-user"></i>
+                        <p class="dashboard-title">Patient</p>
+                    </div>
+                    <div class="patient-bg-card2 shadow text-center pt-2 ml-1 mb-2">
+                        <i class="fas fa-coins"></i>
+                        <p class="dashboard-title">HR</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="patient-bg-card3 shadow text-center pt-2 ml-1 mb-2">
+                        <i class="fas fa-vials"></i>
+                        <p class="dashboard-title">Lab</p>
+                    </div>
+                    <div class="patient-bg-card4 shadow text-center pt-2 ml-1 ">
+                        <i class="far fa-hospital"></i>
+                        <p class="dashboard-title">Pharma</p>
+                    </div>
+                </div>
+                <div class="pl-2 pt-2">
+                    <p class="dashboard-title d-flex flex-row justify-content-start">Processes</p>
+                </div>
+                <div>
+                    <div class="patient-bg-card1 shadow text-center pt-2 ml-1 mb-2">
+                        <i class="fas fa-book"></i>
+                        <p class="dashboard-title">Registration</p>
+                    </div>
+                    <div class="patient-bg-card1 shadow text-center pt-2 ml-1 mb-2">
+                        <i class="far fa-file-lines"></i>
+                        <p class="dashboard-title">Counsultation</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="patient-bg-card3 shadow text-center pt-2 ml-1 mb-2">
+                        <i class="fas fa-thermometer"></i>
+                        <p class="dashboard-title">Tests & Reports</p>
+                    </div>
+                    <div class="patient-bg-card4 shadow text-center pt-2 ml-1 ">
+                        <i class="fas fa-money-bills"></i>
+                        <p class="dashboard-title">Billing</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="consultant-bar-bg">
+                    <div class="d-flex flex-row ">
+                        <i class="fas fa-people-group pt-2 pl-3 consultant-icon"></i>
+                        <p class="consultant-title pt-1 pl-2">Consultants</p>
+                    </div>
+                </div>
+                <div class="filter-bar-bg d-flex flex-row">
+                    <button class="filter-button text-white">Filters</button>
+                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="mt-0.5 mb-1 ml-4 text-gray-500 bg-transparent hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-r-3xl rounded-l-3xl text-sm px-4 py-3 text-center inline-flex items-center border-2 border-lightgray-500 dark:bg-transparent dark:hover:bg-white-700 dark:focus:ring-white-800" type="button">Select Range <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <button class=" mt-2 mb-2 ml-4 text-gray-500 bg-transparent hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-r-3xl rounded-l-3xl text-sm px-2.5 py-2 text-center inline-flex items-center border-2 border-lightgray-500 dark:bg-transparent dark:hover:bg-white-700 dark:focus:ring-white-800" type="button"></button>
+                    <p class="text-secondary  pt-1.5 pl-2">Summary</p>
+                    <button class=" mt-2 mb-2 ml-4 text-gray-500 bg-transparent hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-r-3xl rounded-l-3xl text-sm px-2.5 py-2 text-center inline-flex items-center border-2 border-lightgray-500 dark:bg-transparent dark:hover:bg-white-700 dark:focus:ring-white-800" type="button"></button>
+                    <p class="text-secondary  pt-1.5 pl-2">Branch wise</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="consultant-blocks-bg d-flex flex-row">
+                        <div>
+                            <h5 class="consultants-count-text pl-3">Consultants Count</h5>
+                            <p class="text-green-800 font-medium pl-3" style="font-size:16px; font-weight:bold;">90 / 900</p>
+                            <p class="text-gray-500 pl-3" style="font-size:10px;">Today / Period</p>
+                        </div>
+                        <div class="icon-bg ml-3 mt-3">
+                            <i class="fas fa-people-line pl-1.5 pt-2" style="font-size:22px;"></i>
+                        </div>
+                    </div>
+                    <div class="consultant-blocks-bg2 d-flex flex-row ml-4">
+                        <div>
+                            <h5 class="consultants-count-text pl-3">Consultations</h5>
+                            <p class="text-green-800 font-medium pl-3" style="font-size:16px; font-weight:bold;">11 / 25</p>
+                            <p class="text-gray-500 pl-3" style="font-size:10px;">Today / Period</p>
+                        </div>
+                        <div class="icon-bg2" style="margin-left:44px; margin-top:18px;">
+                            <i class="fas fa-align-right pl-1.5 pt-2" style="font-size:22px;"></i>
+                        </div>
+                    </div>
+                    <div class="consultant-blocks-bg3 d-flex flex-row ml-4">
+                        <div>
+                            <h5 class="consultants-count-text pl-3">Labs</h5>
+                            <p class="text-green-800 font-medium pl-3" style="font-size:16px; font-weight:bold;">25 / 560</p>
+                            <p class="text-gray-500 pl-3" style="font-size:10px;">Today / Period</p>
+                        </div>
+                        <div class="icon-bg3" style="margin-left:64px; margin-top:18px;">
+                            <i class="fas fa-money-bill pl-1.5 pt-2" style="font-size:22px;"></i>
+                        </div>
+                    </div>
+                    <div class="consultant-blocks-bg4 d-flex flex-row ml-4">
+                        <div>
+                            <h5 class="consultants-count-text pl-3">Diet Plans</h5>
+                            <p class="text-green-800 font-medium pl-3" style="font-size:16px; font-weight:bold;">25 / 250</p>
+                            <p class="text-gray-500 pl-3" style="font-size:10px;">Today / Period</p>
+                        </div>
+                        <div class="icon-bg4" style="margin-left:64px; margin-top:18px;">
+                            <i class="fas fa-money-check-dollar pl-1.5 pt-2" style="font-size:22px;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="consultants-table-bg ml-3 mt-3">
+                    <div class="d-flex flex-row">
+                        <h1 class="text-green-700 pl-4 pb-2" style="font-size:20px; padding-top:15px;">Consultants</h1>
+                        <div style="margin-left:600px;">
+                            <button class="mt-2 mb-2 ml-4 text-gray-500 bg-transparent hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-full text-sm px-2.5 py-2.5 text-center inline-flex items-center border-2 border-lightgray-500 dark:bg-transparent dark:hover:bg-white-700 dark:focus:ring-white-800" type="button"><i class="fa-solid fa-share text-green-700"></i></button>
+                            <button class="mt-2 mb-2 ml-4 text-gray-500 bg-transparent hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-full text-sm w-9 h-9 text-center inline-flex items-center border-2 border-lightgray-500 dark:bg-transparent dark:hover:bg-white-700 dark:focus:ring-white-800" type="button"><i class="fa-solid fa-turn-down text-green-700" style="padding-left:12px;"></i></button>
+                        </div>
+                    </div>
+                    <div class="relative overflow-x-auto max-w-full">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 border-collapse">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 border border-gray-300 w-1/4">
+                                        NAME
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 border border-gray-300 w-1/4">
+                                        PATIENT COUNT
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 border border-gray-300 w-1/4">
+                                        LABS
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 border border-gray-300 w-1/4">
+                                        DIET PLANS
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white dark:bg-gray-800">
+                                    <th scope="row" class="px-6 py-2.5 font-medium text-gray-900 whitespace-nowrap dark:text-white border border-gray-300">
+                                        John
+                                    </th>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        12
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        3
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        6
+                                    </td>
+                                </tr>
+                                <tr class="bg-white dark:bg-gray-800">
+                                    <th scope="row" class="px-6 py-2.5 font-medium text-gray-900 whitespace-nowrap dark:text-white border border-gray-300">
+                                        Walter White
+                                    </th>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        13
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        2
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        5
+                                    </td>
+                                </tr>
+                                <tr class="bg-white dark:bg-gray-800">
+                                    <th scope="row" class="px-6 py-2.5 font-medium text-gray-900 whitespace-nowrap dark:text-white border border-gray-300">
+                                        Jesse Pinkman
+                                    </th>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        14
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        4
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        4
+                                    </td>
+                                </tr>
+                                <tr class="bg-white dark:bg-gray-800">
+                                    <th scope="row" class="px-6 py-2.5 font-medium text-gray-900 whitespace-nowrap dark:text-white border border-gray-300">
+                                        Tuco
+                                    </th>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        15
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        2
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        7
+                                    </td>
+                                </tr>
+                                <tr class="bg-white dark:bg-gray-800">
+                                    <th scope="row" class="px-6 py-2.5 font-medium text-gray-900 whitespace-nowrap dark:text-white border border-gray-300">
+                                        Jordan
+                                    </th>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        15
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        1
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        6
+                                    </td>
+                                </tr>
+                                <tr class="bg-white dark:bg-gray-800">
+                                    <th scope="row" class="px-6 py-2.5 font-medium text-gray-900 whitespace-nowrap dark:text-white border border-gray-300">
+                                        Rio
+                                    </th>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        16
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        2
+                                    </td>
+                                    <td class="px-6 py-2.5 border border-gray-300">
+                                        5
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
